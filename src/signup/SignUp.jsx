@@ -13,9 +13,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center py-4 bg-gray-50">
+    <div className="flex min-h-screen items-center justify-center py-4">
       <section className="w-full max-w-md">
-        <div className="bg-white shadow-lg rounded-lg p-6">
+        <div className="bg-white shadow-lg shadow-black rounded-lg p-6">
           <h5 className="text-center text-2xl font-semibold mb-4">
             Sign Up
           </h5>
