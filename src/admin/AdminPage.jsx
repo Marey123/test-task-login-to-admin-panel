@@ -30,7 +30,7 @@ const AdminPage = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen px-2">
       <section className="w-full max-w-md bg-white shadow-lg shadow-black rounded-lg overflow-hidden">
         <div className="p-6">
           <div className="text-center pb-4">

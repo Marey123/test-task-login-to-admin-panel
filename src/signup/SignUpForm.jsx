@@ -55,8 +55,8 @@ const SignUpForm = ({ onSubmit }) => {
             validate: validatePassword,
           })}
         />
-        {errors?.password?.type === "required" && (
-          <p className="text-red-600 text-sm mt-1">Password is required</p>
+        {errors.password && (
+          <p className="text-red-600 text-sm mt-1">{errors.password.message}</p>
         )}
       </div>
 
