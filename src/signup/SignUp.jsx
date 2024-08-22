@@ -16,9 +16,7 @@ const SignUp = () => {
     <div className="flex min-h-screen items-center justify-center py-4">
       <section className="w-full max-w-md">
         <div className="bg-white shadow-lg shadow-black rounded-lg p-6">
-          <h5 className="text-center text-2xl font-semibold mb-4">
-            Sign Up
-          </h5>
+          <h5 className="text-center text-2xl font-semibold mb-4">Sign Up</h5>
           <SignUpForm onSubmit={handleSubmit} />
         </div>
       </section>

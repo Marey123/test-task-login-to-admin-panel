@@ -1,9 +1,9 @@
 import { clientDataService } from "../config/axios";
 
-export const loginEndpoint = async (data) =>{
+export const loginEndpoint = async (data) => {
   return await clientDataService({
     url: `/login`,
-    method: 'POST',
+    method: "POST",
     data: data,
   });
-}
+};

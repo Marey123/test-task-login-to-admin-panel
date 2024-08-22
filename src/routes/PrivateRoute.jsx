@@ -1,9 +1,9 @@
-import React from 'react'
-import { Navigate } from 'react-router-dom'
-import useMe from '../me/useMe'
+import React from "react";
+import { Navigate } from "react-router-dom";
+import useMe from "../me/useMe";
 
-export const PrivateRoute = ({ children}) => {
-  const meQuery = useMe()
+export const PrivateRoute = ({ children }) => {
+  const me = useMe();
 
-  return meQuery.isError ? <Navigate to="/signup" replace /> : children;
+  return me.isError ? <Navigate to="/signup" replace /> : children;
 };

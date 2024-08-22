@@ -1,6 +1,6 @@
-import { useQuery } from '@tanstack/react-query';
-import { ME } from '../constants';
-import { me } from './MeService';
+import { useQuery } from "@tanstack/react-query";
+import { ME } from "../constants";
+import { me } from "./MeService";
 
 const useMe = () => {
   return useQuery({
@@ -11,4 +11,3 @@ const useMe = () => {
 };
 
 export default useMe;
-
