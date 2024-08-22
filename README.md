@@ -3,7 +3,7 @@
 In the project directory, you can run:
 
 ### `cd backend`
-### `yarn`
+### `npm install`
 create env file (use env.example)
 ### `node server.js`
 
