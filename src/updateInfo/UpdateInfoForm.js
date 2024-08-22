@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
 import { validatePassword } from "../constants";
+import ConfettiExplosion from "react-confetti-explosion";
 
-const UpdateInfoForm = ({ onSubmit, isUpdated }) => {
+const UpdateInfoForm = ({ onSubmit, isExploding }) => {
   const {
     register,
     handleSubmit,
@@ -63,12 +64,13 @@ const UpdateInfoForm = ({ onSubmit, isUpdated }) => {
       </div>
 
       <div className="w-full">
-        {isUpdated ? (
+        {isExploding ? (
           <>
             <p className="text-lg font-semibold text-center text-gray-700">
               {" "}
               Information updated successfully! 🎉
             </p>
+            <ConfettiExplosion />
             <p className="text-sm text-gray-600 mb-4 text-center">
               To repeat the action, please reload the page
             </p>

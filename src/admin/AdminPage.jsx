@@ -7,7 +7,7 @@ import AdminLoader from "./AdminLoader";
 const AdminPage = () => {
   const createMutation = useUpdateInfo();
   const { data: user, isLoading } = useMe();
-  const [isUpdated, setUpdated] = useState(false);
+  const [isExploding, setIsExploding] = useState(false);
 
   const handleSubmit = (data) => {
     createMutation.mutate(
@@ -19,7 +19,7 @@ const AdminPage = () => {
       },
       {
         onSuccess: () => {
-          setUpdated(true);
+          setIsExploding(true);
         },
       }
     );
@@ -66,7 +66,7 @@ const AdminPage = () => {
           <h5 className="text-xl font-semibold text-gray-700 mb-4">
             Update Information ✨
           </h5>
-          <UpdateInfoForm onSubmit={handleSubmit} isUpdated={isUpdated} />
+          <UpdateInfoForm onSubmit={handleSubmit} isExploding={isExploding} />
         </div>
       </section>
     </div>
